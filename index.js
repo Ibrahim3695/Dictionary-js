@@ -10,6 +10,8 @@ const searchDef = () => {
     let word = inputValue.value;
 
     const data = async (word) => {
+
+
         let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
 
         try {
@@ -32,12 +34,22 @@ const searchDef = () => {
 
             // console.log(result2[0])
 
-            const val = result2[0].def.map((mean) =>  mean.meaning)
+            const val = result2[0].def.map((mean) => mean.meaning)
             for (let index = 0; index < val.length; index++) {
+
+                const mea = document.createElement("p")
+                mea.innerHTML = "Meaning"
+                mea.className = "styyle"
+
                 const wordArrange = document.createElement("p")
+
+
                 wordArrange.className = "wordArran"
                 wordArrange.textContent = val[index]
+
+                wordArrange.appendChild(mea)
                 meaningWord.appendChild(wordArrange)
+                
             }
 
             let upper = results[0].meanings[0].partOfSpeech
@@ -53,6 +65,9 @@ const searchDef = () => {
 
         console.log(url)
     }
+
+
+    meaningWord.textContent = '';
 
     data(word)
 

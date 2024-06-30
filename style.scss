@@ -13,8 +13,8 @@
     .header-main {
         width: 100%;
         height: 85px;
-        background-color: #011e41;
-        border-bottom: 0.2px solid #949292;
+        background-color: #6C757D;
+        border-bottom: 0.2px solid #FEA166;
         display: flex;
         gap: 2rem;
         padding-inline: 5rem;
@@ -22,8 +22,8 @@
 
 
         .oxford-english-main {
-            width: 30%;
-            color: #fff;
+            width: 40%;
+            color: #FDF0D5;
 
             .red-line {
                 width: 30%;
@@ -33,14 +33,14 @@
             }
 
             span {
-                font-size: 22px;
+                font-size: 25px;
                 font-family: Arial, Helvetica, sans-serif;
                 font-weight: 600;
 
             }
 
             .Oxford {
-                font-size: 20px;
+                font-size: 25px;
                 font-family: Arial, Helvetica, sans-serif;
                 font-weight: 300;
             }
@@ -48,8 +48,8 @@
         }
 
         .search-main {
-            width: 40%;
-            height: 50%;
+            width: 50%;
+            height: 65%;
             border-radius: 30px;
             background-color: #fff;
             display: flex;
@@ -58,7 +58,7 @@
 
 
             .dic-main {
-                width: 25%;
+                width: 19%;
                 height: 100%;
                 border-top-left-radius: 30px;
                 border-bottom-left-radius: 30px;
@@ -68,13 +68,13 @@
                 padding-left: 1rem;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 14px;
-                border-right: 1px solid lightgray;
+                border-right: 1px solid #FEA166;
             }
 
             .input-main {
                 width: 80%;
                 height: 100%;
-                background: #ffff;
+                // background: #988787;
 
                 input {
                     width: 95%;
@@ -87,11 +87,12 @@
             }
 
             .icon-search {
-                width: 12%;
+                width: 15%;
                 height: 100%;
                 @include center;
                 cursor: pointer;
                 padding-right: 3px;
+                // background: #000;
 
             }
         }
@@ -127,8 +128,8 @@
 
     .second-header-main {
         width: 100%;
-        height: 9rem;
-        background-color: #032650;
+        height: 10rem;
+        background-color: #495057;
         @include center;
         flex-direction: column;
 
@@ -153,7 +154,7 @@
             }
 
             p {
-                color: rgb(227, 223, 223);
+                color: #FDF0D5;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: smaller;
                 padding-left: 7.6rem;
@@ -179,7 +180,7 @@
             flex-direction: column;
 
             h1 {
-                color: rgb(227, 223, 223);
+                color: #FDF0D5;
                 font-family: 'Times New Roman', Times, serif;
                 font-size: 50px;
             }
@@ -187,7 +188,7 @@
             p {
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 18px;
-                color: #dedede;
+                color: #fff;
                 padding: 6px 0px 6px 0px;
             }
 
@@ -219,7 +220,7 @@
             .meaning {
                 width: 95%;
                 height: auto;
-                padding: 20px;
+                padding: 5px;
                 // background-color: rgb(236, 236, 236);
                 display: flex;
                 align-items: center;
@@ -231,14 +232,23 @@
             .wordArran {
                 width: 99%;
                 height: auto;
-                padding: 20px;
-                background-color: rgb(210, 245, 210);
+                padding: 5px;
+                // background-color: rgb(210, 245, 210);
                 display: flex;
-                align-items: center;
-                border-radius: 15px;
+                flex-direction: column-reverse;
+                // align-items: center;
+                border-radius: 5px;
+                border-left: 3px solid #FEA166;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 line-height: 1.5rem;
-                margin-top: 0.2rem;
+                margin-top: 1rem;
+            }
+            .styyle {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 
+                sans-serif;
+                font-weight: 400;
+                line-height: 1rem;
+                color: rgb(144, 142, 142);
             }
         }
 
@@ -251,7 +261,7 @@
             .othersMeaning {
                 width: 90%;
                 height: 90%;
-                background-color: #f1f1f1;
+                border: 2px solid #f1f1f1;
                 border-radius: 15px;
             }
         }
