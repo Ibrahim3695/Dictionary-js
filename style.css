@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-div {
+  width: 100%;
+  height: 100vh;
+}
+.main-div .header-main {
+  width: 100%;
+  height: 85px;
+  background-color: #011e41;
+  border-bottom: 0.2px solid #949292;
+  display: flex;
+  gap: 2rem;
+  padding-inline: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-div .header-main .oxford-english-main {
+  width: 30%;
+  color: #fff;
+}
+.main-div .header-main .oxford-english-main .red-line {
+  width: 30%;
+  height: 7vh;
+  margin: 0 0.5rem 0px 0.5rem;
+  border: 1px solid #c81112;
+}
+.main-div .header-main .oxford-english-main span {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.main-div .header-main .oxford-english-main .Oxford {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+.main-div .header-main .search-main {
+  width: 40%;
+  height: 50%;
+  border-radius: 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.main-div .header-main .search-main .dic-main {
+  width: 25%;
+  height: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-right: 1px solid lightgray;
+}
+.main-div .header-main .search-main .input-main {
+  width: 80%;
+  height: 100%;
+  background: white;
+}
+.main-div .header-main .search-main .input-main input {
+  width: 95%;
+  height: 100%;
+  border: none;
+  padding-left: 5px;
+  outline: none;
+  background: white;
+}
+.main-div .header-main .search-main .icon-search {
+  width: 12%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 3px;
+}
+.main-div .header-main .sign-in-main {
+  width: 17%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-div .header-main .sign-in-main p {
+  color: rgb(188, 186, 186);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  line-height: 17px;
+}
+.main-div .header-main .sign-in-main article {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 26px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-div .second-header-main {
+  width: 100%;
+  height: 9rem;
+  background-color: #032650;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-div .second-header-main .first-publish {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-div .second-header-main .first-publish .color {
+  width: 20;
+  color: #e2adb8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  display: flex;
+  justify-content: center;
+}
+.main-div .second-header-main .first-publish p {
+  color: rgb(227, 223, 223);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  padding-left: 7.6rem;
+}
+.main-div .second-header-main .first-publish .toggle {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-div .second-header-main .main-letter {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-div .second-header-main .main-letter h1 {
+  color: rgb(227, 223, 223);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+}
+.main-div .second-header-main .main-letter p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #dedede;
+  padding: 6px 0px 6px 0px;
+}
+.main-div .second-header-main .main-letter span {
+  width: 25%;
+  height: 1.5px;
+  background: #e2adb8;
+}
+.main-div .meaning-main {
+  width: 100%;
+  height: 68vh;
+  display: flex;
+}
+.main-div .meaning-main .definittion-main {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  padding-inline: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+.main-div .meaning-main .definittion-main .meaning {
+  width: 95%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+.main-div .meaning-main .definittion-main .wordArran {
+  width: 99%;
+  height: auto;
+  padding: 20px;
+  background-color: rgb(210, 245, 210);
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+  margin-top: 0.2rem;
+}
+.main-div .meaning-main .others {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-div .meaning-main .others .othersMeaning {
+  width: 90%;
+  height: 90%;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+}/*# sourceMappingURL=style.css.map */

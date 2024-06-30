@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <main class="main-div">
+        <section class="header-main">
+
+            <div class="oxford-english-main">
+                <span>O E D</span>
+                <span class="red-line"></span>
+                <span class="Oxford">Oxford English Dictionary</span>
+            </div>
+
+            <div class="search-main">
+                <aside class="dic-main">Dictionary</aside>
+
+                <aside class="input-main">
+                    <input type="text" placeholder="Search" id="inputValue">
+                </aside>
+
+                <aside class="icon-search" onclick="searchDef()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -960 960 960" width="29px"
+                        fill="#000000">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg>
+                </aside>
+            </div>
+
+            <div class="sign-in-main">
+                <p>Advance <br> search</p>
+                <article>i</article>
+                <article>o</article>
+            </div>
+
+        </section>
+
+        <article class="second-header-main">
+            <div class="first-publish">
+                <p>First published 1897; not yet revised (details)
+                </p>
+
+                <p class="color"> Nearby enttries </p>
+
+                <section class="toggle">
+                    <p>Cite</p>
+                    <p>Contribution</p>
+                    <p>Table view</p>
+                </section>
+            </div>
+
+            <div class="main-letter">
+                <h1 id="word-change">Fluxible</h1>
+                <span></span>
+                <p id="partOfSpeech">Adjective</p>
+                <!-- <span></span> -->
+            </div>
+
+        </article>
+
+        <article class="meaning-main">
+            <section class="definittion-main">
+                <div class="meaning">
+                    <div id="meaningWord"></div>
+                </div>
+            </section>
+
+            <section class="others">
+                <div class="othersMeaning">
+                    <p id="none">lo</p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
