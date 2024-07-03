@@ -3,6 +3,8 @@ const search = document.querySelector(".icon-search")
 const changeWord = document.getElementById("word-change")
 const meaningWord = document.getElementById("meaningWord")
 const partOfSpeech = document.getElementById("partOfSpeech")
+const meaningExample = document.getElementById("meaningExample")
+const examples = document.getElementById("examples")
 
 
 const searchDef = () => {
@@ -20,7 +22,7 @@ const searchDef = () => {
 
             let results = await response.json();
 
-            console.log(results[0])
+            console.log(results[0].meanings[0].definitions.map((e)=>e.example))
 
             changeWord.textContent = word;
 
@@ -30,11 +32,8 @@ const searchDef = () => {
                 }))
             }))
 
-            // meaningWord.textContent = result2[0].def.map((mean)=>{return mean.meaning})
-
-            // console.log(result2[0])
-
             const val = result2[0].def.map((mean) => mean.meaning)
+
             for (let index = 0; index < val.length; index++) {
 
                 const mea = document.createElement("p")
@@ -49,7 +48,26 @@ const searchDef = () => {
 
                 wordArrange.appendChild(mea)
                 meaningWord.appendChild(wordArrange)
-                
+
+            }
+
+            const examp = results[0].meanings[0].definitions.map((e)=>e.example)
+
+            // examples.textContent = examp
+
+            for (let index = 0; index < examp.length; index++) {
+
+                const meaExample = document.createElement("p")
+                meaExample.innerHTML = "Example"
+                meaExample.className = "styleExample"
+
+                const wordArrangeTwo = document.createElement("p")
+                wordArrangeTwo.className = "wordArran"
+                wordArrangeTwo.textContent = examp[index]
+
+                wordArrangeTwo.appendChild(meaExample)
+                examples.appendChild(wordArrangeTwo)
+
             }
 
             let upper = results[0].meanings[0].partOfSpeech
@@ -68,6 +86,7 @@ const searchDef = () => {
 
 
     meaningWord.textContent = '';
+    examples.textContent = '';
 
     data(word)
 
